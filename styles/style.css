@@ -39,6 +39,10 @@ ol, ul {
 	list-style: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* -----main css------ */
 .header {
   background-color: #FFAB91;
@@ -77,7 +81,7 @@ ol, ul {
   width: 20em;
   height: 20em;
   border-radius: 40em;
-  box-shadow: 0 0 3px #454545;
+  box-shadow: 0 0 7px #454545;
 }
 
 .contacts {
@@ -140,7 +144,6 @@ ol, ul {
   font-size: 1.3em;
   font-family: 'Saira Semi Condensed', sans-serif;
   margin: .5em 0;
-  align-self: center;
 }
 
 .section-list__img {
@@ -153,16 +156,17 @@ ol, ul {
 }
 
 .contacts-footer {
+  display: flex;
+  justify-content: center;
   padding: 30px 0;
 }
 
 .contacts-footer__link {
-  font-size: 2em;
+  display: flex;
+  flex-direction: row;
   text-decoration: none;
-  color: #000;
-  font-family: 'Saira Semi Condensed', sans-serif;
-  font-weight: 200;
-  margin: .5em;
+  align-items: center;
+  margin: 0 2em;
 }
 
 .contacts-footer__link:hover {
@@ -170,12 +174,28 @@ ol, ul {
 }
 
 .contacts-footer__img {
-  width: .9em;
-  margin-right: .3em;
+  width: 2em;
+  padding-right: 0.5em;
+}
+
+
+.contacts-footer__text {
+  font-size: 1.5em;
+  color: #000;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 200;
 }
 
 /* -----media requests----- */
 @media screen and (max-width: 850px) {
+
+  .avatar__item {
+    width: 15em;
+    height: 15em;
+    border-radius: 30em;
+    box-shadow: 0 0 5px #454545;
+  }
+  
   .contacts {
     display: flex;
     flex-direction: column;
@@ -210,6 +230,11 @@ ol, ul {
   .contacts-footer {
     display: flex;
     flex-direction: column;
+    margin-left: 2em;
+  }
+
+  .contacts-footer__link {
+    margin: .5em 0;
   }
 }
 
