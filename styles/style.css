@@ -59,7 +59,7 @@ html, body {
 .fullname {
   text-align: center;
   font-size: 4em;
-  font-weight: 800;
+  font-weight: 700;
   font-family: 'Noto Sans HK', sans-serif;
   margin: 1em;
 }
@@ -67,7 +67,7 @@ html, body {
 .kind-of-activity {
   text-align: center;
   font-size: 3em;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Saira Semi Condensed', sans-serif;
 }
 
@@ -189,6 +189,22 @@ html, body {
 /* -----media requests----- */
 @media screen and (max-width: 850px) {
 
+  .fullname {
+    font-size: 3em;
+    font-weight: 500;
+    margin: .5em 0; 
+  }
+
+  .kind-of-activity {
+    font-size: 2.2em;
+    font-weight: 200;
+    padding: .5em;
+  }
+
+  .avatar {
+    margin: 1em 0;
+  }
+
   .avatar__item {
     width: 15em;
     height: 15em;
@@ -224,7 +240,11 @@ html, body {
   .section {
     display: flex;
     align-items: center;
-    margin: 20px 40px;
+    margin: .5em;
+  }
+
+  .section-list__item {
+    font-size: 1em;
   }
 
   .contacts-footer {
