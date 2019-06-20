@@ -192,7 +192,7 @@ html, body {
   .fullname {
     font-size: 3em;
     font-weight: 500;
-    margin: .5em 0; 
+    margin: .5em 0;
   }
 
   .kind-of-activity {
@@ -211,12 +211,12 @@ html, body {
     border-radius: 30em;
     box-shadow: 0 0 5px #454545;
   }
-  
+
   .contacts {
     display: flex;
     flex-direction: column;
   }
-  
+
   .email, .phone {
     display: flex;
     flex-direction: column;
